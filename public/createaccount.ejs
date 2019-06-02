@@ -1,0 +1,281 @@
+<html>
+    <head>
+
+            <style>
+      
+
+                    #button_signup
+                    {
+                        font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                             
+                              color:#3498db;
+                              background: #fbfcfb;
+                              border: 2px solid #3498db;
+                             width:100%;
+                             padding:3 3 3 3 ;
+                             
+                              border-radius: 7px;
+                    }
+                   button {
+                            
+                              font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                              padding: 5px 30px ;
+                              color:#3498db;
+                              background: #fbfcfb;
+                              border: 2px solid #3498db;
+                             width:60%;
+                              margin-left:22%;
+                              border-radius: 7px;
+                              
+                              
+                              
+                              }
+            
+                        button:hover{
+                             
+                              color:rgb(253, 249, 249);
+                              transition:0.3s;
+                              background: #3498db;
+                             
+                        }
+            
+                        #button_signup:hover{
+                             
+                             color:rgb(253, 249, 249);
+                             transition:0.3s;
+                             background: #3498db;
+                            
+                       }
+            
+            
+                       #para_otp
+                    {
+                        font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                             
+                              color:#3498db;
+                              background: #fbfcfb;
+                              border: 2px solid #3498db;
+                            
+                             padding:3 3 3 3 ;
+                             
+                              border-radius: 7px;
+                    }
+                    
+                    #para_otp:hover{
+                             
+                             color:rgb(253, 249, 249);
+                             transition:0.3s;
+                             background: #3498db;
+                            
+                       }
+             
+              #footer 
+              {
+                font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                background-color: #3498db;
+                    color: white;
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+             
+            
+             }
+            
+            .headings
+            {
+                color: #2e86c1;
+            }
+            
+              #header
+              {
+                  width: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                background-color: #3498db;
+                color: white;
+                padding: 1 0 1 0%;
+                
+              }
+            
+              #main
+              {
+                position: fixed;
+                  width: 100%;
+                  margin-top: 9%;
+                  margin-left:23%; 
+                  
+                  
+                  
+              }
+              #speak
+              {
+                  margin-left: 6%;
+              }
+              
+              #read
+              {
+                  margin-left: 6%;
+              }
+            
+               #liked
+              {
+                  margin-left: 6%;
+              }
+            
+               #signin
+              {
+                  position: fixed;
+                border-radius: 25px;
+                border: 2px solid #3498db;
+                margin-top:5%;
+                margin-left:32%; 
+                align-content: center;
+                padding: 4%;
+              } 
+            
+            #signup
+            {
+                position: fixed;
+                border-radius: 25px;
+                border: 2px solid #3498db;
+                margin-top:5%;
+                margin-left:34%; 
+                padding: 4%;
+            }
+            
+            #liker
+            {
+                position: fixed;
+                border-radius: 25px;
+                border: 2px solid #3498db;
+                margin-top:5%;
+                margin-left:22%; 
+                padding: 4%;
+            }
+            textarea {
+                border-radius: 25px;
+                border: 2px solid #3498db;
+                padding: 15px;
+                width: 500px;
+              height: 100px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                color: #3498db;
+                
+            }
+            
+              #area
+              {
+                font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                color: #3498db;
+                padding: 15px;
+                border-radius: 25px;
+                border: 2px solid #3498db;
+              }
+              
+              body
+              {
+                font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                color: #3498db;
+              }
+
+              #enter_otp {
+                border-radius: 25px;
+                border: 2px solid #3498db;
+                padding: 10px;
+                width: 100%;
+               
+              font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                color: #3498db;
+                
+            }
+              </style>   
+            
+
+
+
+
+
+
+
+     <script src="jquery-3.2.1.min.js"></script>
+            
+    <script>
+                      
+                $(document).ready(function(){
+                  
+                  $("#button_verify").hide();
+                    $("#enter_otp").hide();
+                    $("#signin").hide();
+                    $("#enter_otp").show(500);
+                    $("#button_verify").show(500);
+
+                    
+                    
+                 });
+    </script>
+    </head>
+  
+  
+  
+  
+
+    <body>
+        
+            <div id="header" >
+                 <h1 align="center">THE FORUM</h1>
+            </div>
+            
+
+            
+            
+                
+            
+           
+
+            <form action="/verifyotp" method="POST">
+            <div id="signup">
+
+              
+                    <table>
+                    <tr>
+                    <td>
+                    <b>Mail</b>
+                    </td>
+                    <td>
+                   <input type="text" id="area">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <b>Password</b>
+                    </td>
+                    <td>
+                        <input type="text" id="area">
+                    </td>
+                </tr>
+                    
+                <tr>    
+                    
+                        <td colspan="2"><button action="/signup" method="POST" id="para_otp" ><b>Request O.T.P.(Mandatory)</button></td>  
+                         
+                           
+                    </tr>  
+                </table>
+                  <br>
+                <input type="text" id="enter_otp" placeholder="Enter OTP" >
+                <br><br>
+                <button id="button_verify"><b>Verify</button>
+                    
+            </div>
+                </form>
+
+
+               
+                <div id="footer">
+                    <h3 align="center">SHOAIB SHAIKH PRODUCTIONS</h3>
+                </div>
+    </body>
+
+
+</html>
+    

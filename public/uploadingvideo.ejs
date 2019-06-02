@@ -1,0 +1,105 @@
+<!--
+Copyright (c) 2019 by JoÃ£o Santos (https://codepen.io/jotavejv/pen/bRdaVJ)
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Upload PROJECT</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+      .w3-btn {margin-bottom:10px;}
+      
+      #text2{
+    
+     
+     width: 100%;
+     max-width: 500px;
+     box-sizing: border-box;
+     }
+
+     body
+     {
+       background: teal;
+     }
+      </style>
+</head>
+
+<body >
+<form action="/upload_video" method="POST" enctype="multipart/form-data">
+  <div class="upload">
+ <div class="upload-files">
+  <header>
+   <p>
+    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+    <span class="up">up</span>
+    <span class="load">load</span>
+    
+   </p>
+  
+  </header>
+  <br>
+  <input type="text" id="text2" name="seatnumber" class="w3-btn w3-white w3-border w3-border-teal w3-round-large" placeholder="ENTER SEAT NUMBER">
+  <br>
+  <input type="text" id="text2" name="title" class="w3-btn w3-white w3-border w3-border-teal w3-round-large" placeholder="ENTER PROJECT TITLE">
+  <div class="body" id="drop">
+      
+   <i class="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
+
+   <p class="pointer-none"><b>Drag and drop</b> files here <br /> or <a href="" id="triggerFile">browse</a> to begin the upload
+    
+
+  </p>
+ 
+  <a href="/tomain"  class="w3-btn w3-white w3-border w3-border-teal w3-round-large">Home</a>
+  
+			<input type="file" multiple="multiple" name="user_uploaded_video"/>
+  </div>
+  
+  <footer>
+   <div class="divider">
+    <span><AR>FILES</AR></span>
+   </div>
+   <div class="list-files">
+    <!--   template   -->
+    
+   </div>
+   
+      <button class="importar">UPDATE FILES</button>
+     
+  </footer>
+ </div>
+</div>
+  
+  </form>
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
