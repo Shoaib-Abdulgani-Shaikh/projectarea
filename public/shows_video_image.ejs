@@ -1,7 +1,8 @@
 <script src="jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 .gallery-block{padding-bottom: 60px; padding-top: 60px;}
 .gallery-block .heading{margin-bottom: 50px; text-align: center;}
 
@@ -92,6 +93,21 @@
   color: black; 
   border: 2px solid #008CBA;
 }
+
+.preloader {
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('load.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
+
+}
 </style>
 
 <!doctype html>
@@ -110,7 +126,7 @@
     <title>PROJECTS</title>
   </head>
   <body >
-
+  <div class="preloader"></div>
 			<div class="topnav" id="myTopnav">
 					<a href="/tomain" class="active">Home</a>
 					<a href="/toupload">Upload Project</a>
@@ -169,7 +185,16 @@
     x.className = "topnav";
   }
 } 
+
+
 	  </script>
+	  <script>
+$(document).ready(function(){
+  $(window).load(function() {
+   $('.preloader').fadeOut('slow');
+});
+});
+</script>
     
   </body>
 </html>
