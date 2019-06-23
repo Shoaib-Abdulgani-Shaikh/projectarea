@@ -58,11 +58,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    background-position: center;
 
 }
+#q{
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('load2.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
+   display:none;
+
+}
       </style>
 </head>
 
 <body onload="myfun()">
  <div id="p"></div>
+ <div id="q"></div>
  
 <form action="/upload_video" method="POST" enctype="multipart/form-data">
   <div class="upload">
@@ -116,7 +132,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	 <script>
 	  var pre=document.getElementById('p');
-	  
+	  var qre=document.getElementById('q');
 	  function myfun()
 	  {
 	  
@@ -125,7 +141,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	  function delay()
 	  {
-	  	  pre.style.display='block';
+	  	  qre.style.display='block';
 
 	  }
 	  </script>
