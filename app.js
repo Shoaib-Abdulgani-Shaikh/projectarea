@@ -45,7 +45,7 @@ app.use(express.static(path.join(__dirname,'public')));
 var con = mysql.createConnection({
   host: "remotemysql.com",
   user: "dxVTw6ZMkc",
-  password: "LQf74cYI2L",
+  password: "Oy82o7PZem",
   database: "dxVTw6ZMkc"
 });
 
