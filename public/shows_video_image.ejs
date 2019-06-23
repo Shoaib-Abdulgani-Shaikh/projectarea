@@ -109,7 +109,13 @@
 
 }
 </style>
-
+<script>
+$(document).ready(function(){
+  $(window).load(function() {
+   $('.preloader').hide(3000);
+});
+});
+</script>
 <!doctype html>
 <html lang="en">
   <head>
@@ -188,13 +194,7 @@
 
 
 	  </script>
-	  <script>
-$(document).ready(function(){
-  $(window).load(function() {
-   $('.preloader').fadeOut(3000);
-});
-});
-</script>
+	  
     
   </body>
 </html>
