@@ -43,10 +43,10 @@ app.use(express.static(path.join(__dirname,'public')));
 
 //database connection
 var con = mysql.createConnection({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12294251",
-  password: "ArZtTlfari",
-  database: "sql12294251"
+  host: "remotemysql.com",
+  user: "dxVTw6ZMkc",
+  password: "LQf74cYI2L",
+  database: "dxVTw6ZMkc"
 });
 
 
