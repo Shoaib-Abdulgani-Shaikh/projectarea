@@ -130,8 +130,8 @@ app.post('/send_otp_to_mail',function(req,res){
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'shoaibsshaikh12@gmail.com',
-        pass: '9881Superman'
+        user: 'projectarea.community@gmail.com',
+        pass: '9881@Superman'
       }
     });
     console.log(options);
