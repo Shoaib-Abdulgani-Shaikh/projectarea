@@ -61,8 +61,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       </style>
 </head>
 
-<body onload='myfun()'>
- <div  id="p">Updating Changes</div>
+<body onload="myfun()">
+ <div id="p"></div>
+ 
 <form action="/upload_video" method="POST" enctype="multipart/form-data">
   <div class="upload">
  <div class="upload-files">
@@ -102,7 +103,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
    </div>
    
-      <button class="importar" id="but">UPDATE FILES</button>
+      <button class="importar" onclick="delay()">UPDATE FILES</button>
      
   </footer>
  </div>
@@ -115,20 +116,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	 <script>
 	  var pre=document.getElementById('p');
+	  
 	  function myfun()
 	  {
 	  
 	  pre.style.display='none';
 	  }
+
+	  function delay()
+	  {
+	  	  pre.style.display='block';
+
+	  }
 	  </script>
-	  <script>
-$(document).ready(function(){
-  $("but").click(function(){
-    $("#p").fadeIn();
-    
-  });
-});
-</script>
+
+	 
 
 </body>
 
