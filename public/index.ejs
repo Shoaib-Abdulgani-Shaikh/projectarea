@@ -4,6 +4,7 @@
 	
 
 	<title>Login</title>
+	<link rel="manifest" href="./manifest.webmanifest">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -98,6 +99,24 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+
+	window.addEventListener('load', () => {
+  
+  registerSW();
+});
+
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
+	
+	</script>
 
 </body>
 </html>
