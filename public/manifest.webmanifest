@@ -1,8 +1,8 @@
 {
   "name": "Project Area",
-  "short_name": "PA",
+  "short_name": "Pro. Area",
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#fff",
   "description": "An Invention app.",
   "icons": [
