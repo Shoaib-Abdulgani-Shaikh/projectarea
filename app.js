@@ -16,7 +16,7 @@ var app=express();
 var global_umail;
 var global_password;
 var global_otp;
-var port = process.env.PORT || 8080;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 var options = 
 {
@@ -45,7 +45,7 @@ app.use(express.static(path.join(__dirname,'public')));
 var con = mysql.createConnection({
   host: "remotemysql.com",
   user: "dxVTw6ZMkc",
-  password: "Oy82o7PZem",
+  password: "6oROfjBHUr",
   database: "dxVTw6ZMkc"
 });
 
