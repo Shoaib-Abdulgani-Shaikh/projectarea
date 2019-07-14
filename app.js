@@ -16,7 +16,7 @@ var app=express();
 var global_umail;
 var global_password;
 var global_otp;
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 var options = 
 {
@@ -314,6 +314,6 @@ app.post('/tomain2',function(req,res){
 //listening
 app.listen(port,function(req,res){
 
-    console.log('turned on 3000');
+    console.log('turned on 8080');
     
     })
